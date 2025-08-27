@@ -59,11 +59,14 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "http://localhost:3000",  # If using another frontend on port 3000
+    "http://localhost:3000", 
+    "https://electroshop-backend.onrender.com"
 ]
+
 
 
 ROOT_URLCONF = 'ElectroShop.urls'
