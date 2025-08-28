@@ -26,8 +26,14 @@ SECRET_KEY = 'django-insecure-2n)_p-cja(7ij6n&l!)*rjw&j-q3wm=(o3@wtnkygks78dtanv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "electroshop-backend.onrender.com"
+]
+import os
 
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1").split()
 
 # Application definition
 
