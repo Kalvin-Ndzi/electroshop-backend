@@ -74,6 +74,14 @@ CORS_ALLOWED_ORIGINS = [
     "https://electroshop-backend.onrender.com"
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000", 
+    "https://electroshop-backend.onrender.com",
+    "https://electroshop-e8iq.onrender.com",
+]
+
 
 
 ROOT_URLCONF = 'ElectroShop.urls'
