@@ -29,8 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "electroshop-backend.onrender.com"
+    "electroshop-backend.onrender.com",
+    "electroshop-e8iq.onrender.com",
 ]
+
 import os
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1").split()
